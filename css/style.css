@@ -22,6 +22,10 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+li a {
+    float: right;
+}
 .logo{
     width: 20%;
     display: flex;

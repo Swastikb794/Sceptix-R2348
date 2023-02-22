@@ -6,30 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>FOSS - Free and open source software</title>
+    <title>FOSS - Free and Open Source Software</title>
 </head>
 
 <body>
     <nav class="navbar backround h-nav-resp">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="img/foss-icon.png" alt="logo"></div>
+        <ul class="nav-list v-class-resp" id="topnav">
+            <li class="logo"><img src="img/foss-icon.png" alt="logo"></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#section">Section</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <div class="rightNav v-class-resp">
-            <input type="text" name="search" id="search">
-
-            <button class="btn btn-sm">Search</button>
-
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
     </nav>
     <section class="backround firstSection" id="home">
         <div class="box-main">
@@ -65,31 +53,30 @@
     <section class="sectionLeft" id="section">
         <div class="paras">
         <p class="sectionTag text-big">Benefits of Free and Open-source Software</p>
-        <p class="sectionSubTag text-small">FLEXIBILITY AND AGILITY : </p>
+        <p class="sectionSubTag text-small">FLEXIBILITY AND AGILITY</p>
             IT leaders must fundamentally provide flexibility and agility for their enterprise. If you cant compete on agility, youre going to get left 
             behind by the competition. Open source enables technology agility, typically offering multiple ways to solve problems. Open source helps keep 
             your IT organization from getting blocked because a particular capability isnt available from a vendor. Instead of waiting for the vendor to 
-            deliver that capability, you can create it yourself.  
-        </p>SPEED : </p>
+            deliver that capability, you can create it yourself.
+        </p>SPEED:</p>
             Your enterprise will soon be competing on speed, if it isnt already. Open source enables speed. A great advantage of open source is the ability 
             to take the community versions, get started, understand whether they can solve your business problem, and begin to deliver value right away. 
             Once you make that determination, professional support and services are increasingly available for open source products, especially those supported
             by Red Hat.  </p>
         
-            COST--EFFECTIVENESS : </p>
+            COST--EFFECTIVENESS: </p>
             Open source is generally much more cost-effective than a proprietary solution. Not only are open source solutions typically much more inexpensive in an 
             enterprise environment for equivalent or superior capability, but they also give enterprises the ability to start small and scale (more on that coming up). 
             Given that enterprises are often budget challenged, it just makes financial sense to explore open source solutions.
 
-        </p>ABILITY TO START SMALL : </p>
+        </p>ABILITY TO START SMALL: </p>
             With open source, you can start small and quickly with community versions, and then migrate to a commercially-supported solution as your business requirements drive you there.
             If the project doesnt require support, you can continue on the community version indefinitely. You have the option to try the various alternatives, pick the one that’s going to work, 
             and then scale up with a commercial solution.  
         </p>
         </div>
             <div class="thumbnail">
-                <img src="img/opensource-istock-.jpg" alt="what Foss" class="imgFluid">
-                            
+                <img src="img/opensource-istock-.jpg" alt="what Foss" class="imgFluid">           
             </div>
                 
 
@@ -97,7 +84,7 @@
 
     <section class="sectionRight">
         <div class="paras">
-        <p class="sectionTag text-big">History of its Development : </p>
+        <p class="sectionTag text-big">History of its Development</p>
         <p class="sectionSubTag text-small">The history of Free and Open-source software (FOSS) dates back to the early days of computing, when software was often shared and developed 
             collaboratively among researchers and hobbyists. In the late 1960s and early 1970s, a number of software developers and computer scientists began to adopt a more collaborative 
             approach to software development, sharing their code and working together to improve it.</p><p>
@@ -123,7 +110,7 @@
     </section>
     <section class="sectionLeft">
         <div class="paras">
-        <p class="sectionTag text-big">FOSS Aternatives For Common Applications : </p>
+        <p class="sectionTag text-big">FOSS Aternatives For Common Applications</p>
         <p class="sectionSubTag text-small">
         Linux distro : </p>
         A better alternative for Microsoft Windows when it comes to privacy and security.</p>
@@ -150,7 +137,7 @@
 
     <section class="sectionRight">
         <div class="paras">
-        <p class="sectionTag text-big">Its Ties With GNU/Linux : </p>
+        <p class="sectionTag text-big">Ties with GNU/Linux</p>
         <p class="sectionSubTag text-small">GNU is an operating system that is free software—that is, it respects users' freedom. The GNU operating system consists of GNU packages 
             (programs specifically released by the GNU Project) as well as free software released by third parties. The development of GNU made it possible to use a computer without 
             software that would trample your freedom.</p>
@@ -169,20 +156,20 @@
     <section class="contact" id="contact">
        <h2 class="text-center">Contact Us</h2>
        <div class="form">
-        <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
-        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
-        <input class="form-input" type="text" name="email" id="email" placeholder="Enter your email">
-         <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellborate your concern"></textarea>
-        <button class="btn btn-sm btn-dark">Submit</button>
+        <input id = "name" class="form-input" type="text" name="name" placeholder="Enter your name">
+        <input id = "subject" class="form-input" type="text" name="subject" placeholder="Subject">
+         <textarea id = "message" class="form-input" name="text" cols="30" rows="10" placeholder="Ellborate your concern"></textarea>
+        <button onclick="sendmail()" class="btn btn-sm btn-dark">Submit</button>
        </div>
     </section>
 
     <footer class="backround">
         <p class="text-footer">
-            Copyright &copy; 2027 www.Foss.com - All Rights Reserved
+            Made with ❤️ <br>
+            Copyright &copy; 2023 - Team Sceptix-R2348
         </p>
     </footer>
-    <script src="js/resp.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
